@@ -1,0 +1,411 @@
+/* --- Reset de estido de cajas ---*/
+*{
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button {
+  /* Para <button> */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+
+  /* Para <a> */
+  display: inline-block;
+  text-decoration: none;
+
+  /* Otros */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/*----- General ----- */
+
+body{
+  position: relative;
+  background-color: #FAF8E7;
+}
+
+img{
+  max-width: 100%;
+}
+
+p{
+  padding-top: 20px;
+}
+
+/* ----- Estilos tipográficos ------ */
+
+@font-face{
+	font-family: 'Geomanist-Regular-italic';
+	src: url('../fonts/geomanist-regular-webfont.woff') format('woff');
+}
+
+h1{
+  font-family: 'Lobster Two', cursive;
+  font-size: 44px;
+}
+
+h2{
+  font-family: 'Lobster Two', cursive;
+  font-size: 28px;
+}
+
+h3{
+  padding-top: 20px;
+  font-family: 'Lobster Two', cursive;
+  font-size: 24px;
+}
+
+p, a, label{
+  font-family: 'Geomanist-Regular-Italic', Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* ----- Cabecera ----- */
+
+.top-bar{
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ right: 0px;
+ padding: 5px;
+}
+
+.logotype{
+  display: inline-block;
+  padding: 5px;
+  font-family: 'Lobster', cursive;
+  font-size: 44px;
+  color: #32421A;
+}
+
+.lanzador{
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 5px;
+  color: #32421A;
+}
+
+.header{
+  min-height: 500px;
+  color: #32421A;
+  text-align: center;
+  padding: 250px 20px 50px 20px;
+  background-image: url(../images/splash.png);
+  background-size: cover;
+  background-position: top;
+}
+
+/* ----- Navegación ----- */
+
+.navegacion{
+  text-align: center;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: #32421A;
+}
+
+.menu-item{
+  padding: 10px;
+  border-bottom: 2px solid #32421A;
+}
+
+/* ----- Estructura ----- */
+
+.separador{
+  display: inline-block;
+  width: 30%;
+  margin-top: 25px;
+}
+
+/* Rules for icon sizes: */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; } /* Default */
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 {
+  padding: 10px;
+  font-size: 48px;
+  border-radius: 50%;
+}
+
+.content{
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.verde{
+  background-color: #32421A;
+  color: #F2EDC5;
+}
+
+.crema{
+  background-color: #F2EDC5;
+  color: #32421A;
+}
+
+.call-to-action{
+  min-height: 400px;
+  color: #F2EDC5;
+  background-image: url(../images/call-to-action.png);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.button{
+  width: 50%;
+  text-decoration: none;
+  margin: 25px;
+  padding: 10px;
+  color: #F2EDC5;
+  border: 2px solid #F2EDC5;
+  transition: color .15s ease-in-out,
+    background-color .15s ease-in-out;
+}
+
+.button:hover, .button:active, .button:focus {
+  color: #32421A;
+  background-color: #F2EDC5;
+}
+
+.link:visited{
+  color: inherit;
+  text-decoration: none;
+  text-decoration-line: underline;
+}
+
+.medio{
+  width: 100%;
+}
+.cuarto{
+  width: 100%;
+}
+
+.container{
+  overflow: hidden;
+}
+
+li{
+    transition: 1s background-color;
+}
+
+li:hover{
+  background-color: white;
+}
+
+/* ----- pie de página ----- */
+
+.footer{
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: #241d1b;
+  color: #F2EDC5;
+}
+
+/* ----- páginas ----- */
+
+/* ----- formularios ----- */
+
+label{
+  display: block;
+  text-align: left;
+  padding: 5px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #32421A;
+  margin-bottom: 15px;
+}
+
+input:required, textarea:required{
+  border: none;
+  border-left: 5px solid #32421A;
+}
+
+/* ----- Responsive ----- */
+
+/*@media screen and (max-width: 600px){
+
+  .js .navegacion{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+    position: absolute;
+    top: 43px;
+    left: 30px;
+    right: 30px;
+    background-color: #32421A;
+  }
+  .js .navegacion a{
+    padding: 5px 10px;
+    color: #F2EDC5;
+    border-top: 1px solid #32421A;
+  }
+  .js .navegacion .menu-desplegado{
+    max-height: 200px;
+  }
+}
+
+@media screen and (min-width: 601px){
+
+  .lanzador-menu{
+    display: none;
+  }
+  .navegacion{
+    position: absolute;
+    top:-30px;
+  }
+  body{
+    margin-top: 60px;
+  }
+  .navegacion li{
+    display: inline-block;
+    margin-right: 15px;
+  }
+}*/
+
+
+@media screen and (min-width: 768px) {
+  p, a{
+    font-size: 18px;
+  }
+
+  .header{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .lanzador{
+    display: none;
+  }
+
+  .navegacion{
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 5px;
+      color: #32421A;
+  }
+
+  .call-to-action{
+    padding: 100px 60px;
+  }
+
+  .button{
+    font-size: 18px;
+  }
+
+  .menu-item{
+    display: inline-block;
+  }
+
+  .content{
+      padding: 80px 40px;
+  }
+
+  .medio {
+    float:left;
+    width:50%;
+  }
+
+  .cuarto{
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  p, a{
+    font-size: 20px;
+  }
+
+  .header{
+    padding: 250px 40px 50px 40px;
+  }
+
+  .content{
+      padding: 80px 60px;
+  }
+
+  .call-to-action{
+    padding: 100px 100px;
+  }
+
+  .button{
+    font-size: 20px;
+  }
+
+  .cuarto{
+    float: left;
+    width: 25%;
+  }
+}
