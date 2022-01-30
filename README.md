@@ -1,2 +1,3 @@
-# rockerson.github.io
-a personal developer web site hosted by GitHub
+# web-rockerson
+
+a personal website using HTML5, CSS3 and Javascript.

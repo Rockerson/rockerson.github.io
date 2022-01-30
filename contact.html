@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rockerson Tech</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="images/Rockerson_ico_negativo.png"
+      type="image/png"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <span class="logotype">Rockerson</span>
+      <a class="lanzador" href="#menu">
+        <i class="material-icons md-36">menu</i></a
+      >
+    </div>
+
+    <div class="header">
+      <h1>Experiencias Interactivas de Marca</h1>
+      <hr class="separador" />
+      <p>
+        Una web dedicada a diseñar, desarrollar y disfrutar de las mejores
+        experiencias interactivas de marca
+      </p>
+      <ul style="padding-top: 30px;">
+        <li class="menu-item">
+          <a href="mailto:rockerson@rockeme.com"
+            ><i class="material-icons md-24">mail</i>
+            <!-- hi@rockerson.net --></a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="tel:+573008086848"
+            ><i class="material-icons md-24">call</i>
+            <!-- +57 300 808 6848 --></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <form
+        enctype="text/plain"
+        action="mailto:rockerson@rockeme.com"
+        method="post"
+      >
+        <label for="name">Nombre*</label>
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Escriba su nombre"
+          autofocus
+          required
+        />
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          name="email"
+          value=""
+          placeholder="Escriba su correo electrónico"
+          required
+        />
+        <label for="email">Teléfono</label>
+        <input
+          type="tel"
+          name="phone"
+          value=""
+          placeholder="Escriba su número de teléfono"
+        />
+        <label for="message">Mensaje*</label>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Escriba su mensaje"
+          required
+        ></textarea>
+        <input
+          class="button verde"
+          type="submit"
+          name="submit-new-post"
+          value="Enviar"
+        />
+      </form>
+    </div>
+
+    <ul id="menu" class="navegacion">
+      <li class="menu-item"><a href="index.html">Inicio</a></li>
+      <!--<li class="menu-item"><a href="/blog.php">Blog</a></li>-->
+      <li class="menu-item"><a href="#">Contacto</a></li>
+    </ul>
+
+    <footer class="footer">
+      <p style="display: none;">Photos by fauxels and Moose from Pexels</p>
+      <p>Todos los derechos resevados a Rockerson</p>
+    </footer>
+
+    <!--<script>
+
+      var lanzador = "#enlace-menu";
+      var desplegable = "#menu";
+      var despliegaClase = "menu-desplegado";
+
+      function nav(){
+        var lanz = document.querySelector(lanzador);
+        lanz.addEventListener("click", despliegaMenu, false);
+
+        function despliegaMenu(e){
+          e.preventDefault();
+          var despl = document.querySelector(desplegable);
+          despl.classList.toggle(despliegaClase);
+        }
+      }
+
+      document.querySelector("html").classList.add("js");
+
+      nav();
+    </script>-->
+  </body>
+</html>
