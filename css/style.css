@@ -277,15 +277,11 @@ label{
   padding: 5px;
 }
 
-input, textarea{
+input, textarea, input:required{
+  border: none;
   width: 100%;
   padding: 10px;
-  border: 2px solid #32421A;
   margin-bottom: 15px;
-}
-
-input:required, textarea:required{
-  border: none;
   border-left: 5px solid #32421A;
 }
 
